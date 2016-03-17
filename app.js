@@ -1,4 +1,4 @@
-var firstName = prompt('What is your name?');
+/* var firstName = prompt('What is your name?');
 alert('Hello, ' + firstName + '. My name is Claire Gatenby, welcome to my "About Me" page. Please continue for a quiz to learn more about who I am.');
 console.log('First name: ' + firstName);
 
@@ -85,4 +85,13 @@ while (numberTries < 3 && numberGuess !== 13) {
   console.log('input number: ' + numberGuess);
   numberTries ++;
   console.log('number of tries: ' + numberTries);
+} */
+
+// bonus adding list of users favourite games
+var favoriteGame = [];
+var gameList = 1;
+while (favoriteGame.length < 5) {
+  favoriteGame.push(prompt('What is your number ' + gameList + ' favorite game?'));
+  gameList ++;
+  console.log('favorite game: ' + favoriteGame);
 }
