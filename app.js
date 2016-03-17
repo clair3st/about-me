@@ -1,9 +1,12 @@
-/* var firstName = prompt('What is your name?');
+//welcome statment and ask for name.
+var firstName = prompt('What is your name?');
 alert('Hello, ' + firstName + '. My name is Claire Gatenby, welcome to my "About Me" page. Please continue for a quiz to learn more about who I am.');
 console.log('First name: ' + firstName);
 
+//initialise the score
 var userScore = 0;
 
+//first question
 var birthPlace = prompt('Firstly, was I born in the USA? Yes or No?');
 console.log('Q1. Birth place: ' + birthPlace);
 if (birthPlace.toLowerCase() === 'yes' || birthPlace.toLowerCase() === 'y') {
@@ -16,6 +19,7 @@ if (birthPlace.toLowerCase() === 'yes' || birthPlace.toLowerCase() === 'y') {
 }
 console.log('user score: ' + userScore);
 
+//second question
 var petCat = prompt('Do I have a pet cat? Yes or No?');
 console.log('Q2. Pet cat: ' + petCat);
 if (petCat.toLowerCase() === 'yes' || petCat.toLowerCase() === 'y') {
@@ -29,6 +33,7 @@ if (petCat.toLowerCase() === 'yes' || petCat.toLowerCase() === 'y') {
 }
 console.log('user score: ' + userScore);
 
+//third question
 var hangTen = prompt('Now you know I am from Australia, do you think I can surf?');
 console.log('Q3. Surfing ability: ' + hangTen);
 if (hangTen.toLowerCase() === 'yes' || hangTen.toLowerCase() === 'y') {
@@ -41,6 +46,7 @@ if (hangTen.toLowerCase() === 'yes' || hangTen.toLowerCase() === 'y') {
 }
 console.log('user score: ' + userScore);
 
+//forth question
 var homeCountries = prompt('Apart from Australia and the USA, do you think I have lived in any other countries?');
 console.log('Q4. Countries lived: ' + homeCountries);
 if (homeCountries.toLowerCase() === 'yes' || homeCountries.toLowerCase() === 'y') {
@@ -53,6 +59,7 @@ if (homeCountries.toLowerCase() === 'yes' || homeCountries.toLowerCase() === 'y'
 }
 console.log('user score: ' + userScore);
 
+//fifth and secret question
 var japaneseFood = prompt('I love Japanese food, more than just sushi. I could eat good ramen for the rest of my life. Do you like Japanese food?');
 console.log('Q5. Japanese food: ' + japaneseFood);
 if (japaneseFood.toLowerCase() === 'yes' || japaneseFood.toLowerCase() === 'y') {
@@ -66,8 +73,10 @@ if (japaneseFood.toLowerCase() === 'yes' || japaneseFood.toLowerCase() === 'y') 
 }
 console.log('user score: ' + userScore);
 
+//score reveal
 alert('Congratulations ' + firstName + '! You have finished the quiz. Your score for the quiz was ' + userScore + ' out of 5.');
 
+//Question 6 - number guessing game
 var numberGuess = parseInt(prompt('Try guess my favourite number.'));
 console.log('input number: ' + numberGuess);
 var numberTries = 0;
@@ -85,9 +94,9 @@ while (numberTries < 3 && numberGuess !== 13) {
   console.log('input number: ' + numberGuess);
   numberTries ++;
   console.log('number of tries: ' + numberTries);
-} */
+}
 
-// bonus adding list of users favourite games
+// Question 7 bonus adding list of users favourite games
 var favoriteGame = [];
 var gameList = 1;
 while (favoriteGame.length < 5) {
