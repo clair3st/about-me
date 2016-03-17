@@ -1,4 +1,4 @@
-var firstName = prompt('What is your name?');
+/*var firstName = prompt('What is your name?');
 alert('Hello, ' + firstName + '. My name is Claire Gatenby, welcome to my "About Me" page. Please continue for a quiz to learn more about who I am.');
 console.log('First name: ' + firstName);
 
@@ -54,3 +54,23 @@ if (japaneseFood.toLowerCase() === 'yes' || japaneseFood.toLowerCase() === 'y') 
 }
 
 alert('Congratulations ' + firstName + '! You have finished the quiz. Please enjoy ready the rest of my "About Me" page.');
+*/
+
+var numberGuess = parseInt(prompt('Try guess my favourite number!'));
+console.log('input number: ' + numberGuess);
+var numberTries = 0;
+
+while (numberTries < 3 && numberGuess !== 13) {
+  if (isNaN(numberGuess)) {
+    numberGuess = prompt('That is an invalid response, try guess again.');
+  } else if (numberGuess < 13) {
+    numberGuess = prompt('That is too low. Guess again.');
+  } else if (numberGuess > 13) {
+    numberGuess = prompt('That is too high. Guess again.');
+  } else {
+    prompt('Congratulations, you got it right!');
+  }
+  console.log('input number: ' + numberGuess);
+  numberTries ++;
+  console.log('number of tries: ' + numberTries);
+}
