@@ -6,18 +6,18 @@ header {
 body {
   background-color: #130038;
 }
-#bio {
+.bio {
   background-color: #feffb7;
 }
-#education {
+.education {
   background-color: #e8e4ac;
 }
-#jobexp {
+.jobexp {
   background-color: #fff7c9;
 }
-#goals {
+.goals {
   background-color: #e8dfbf;
 }
-#travel {
+.travel {
   background-color: #ffefc9;
 }
