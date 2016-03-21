@@ -120,11 +120,11 @@ function numberGuessQ(){
       prompt('Congratulations, you got it right!');
     }
     console.log('input number: ' + numberGuess);
-    //numberTries ++;
+    numberTries ++;
     console.log('number of tries: ' + numberTries);
   }
 }
-//numberGuessQ();
+numberGuessQ();
 
 /*// Question 7 bonus adding list of users favourite games
 function favoriteGameQ(){
